@@ -1,4 +1,48 @@
-
-    <p>Ferrari is more than just a luxury car manufacturer; it is a global symbol of speed, passion, and automotive excellence. For generations, the sight of a sleek red sports car bearing the iconic prancing horse has made the hearts of car enthusiasts race worldwide. Behind this legendary brand lies a rich history driven by one man's absolute obsession with racing</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Z-index Example</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    padding: 20px;
+  }
+  .box {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .red {
+    background: red;
+    top: 50px;
+    left: 50px;
+    z-index: 1; /* Behind blue */
+  }
+  .blue {
+    background: blue;
+    top: 100px;
+    left: 100px;
+    z-index: 2; /* In front of red */
+  }
+  .green {
+    background: green;
+    top: 150px;
+    left: 150px;
+    z-index: 3; /* In front of both */
+  }
+</style>
+</head>
+<body>
+<h2>Z-index Demonstration</h2>
+<div class="box red">z-index: 1</div>
+<div class="box blue">z-index: 2</div>
+<div class="box green">z-index: 3</div>
 </body>
 </html>
